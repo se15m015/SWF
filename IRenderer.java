@@ -5,5 +5,8 @@ package teletext.interfaces;
  */
 public interface IRenderer {
 
-    void render(String[][] content);
+    void renderContent(TeletextCell[][] content);
+    void renderCurrentPage(String currentPage);
+    void renderPageInput(String pageInput);
+
 }

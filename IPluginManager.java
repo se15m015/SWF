@@ -5,9 +5,9 @@ package teletext.interfaces;
  */
 public interface IPluginManager {
 
-    //initialize Plugins -- should be done by felix
+    void initPlugin(IPlugin plugin);
 
-    void resolvePage(int page);
+    boolean resolvePage(int page);
 
     void back();
 

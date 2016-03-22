@@ -5,7 +5,13 @@ package teletext.interfaces;
  */
 public interface IPlugin{
 
-    String[][] provideContent(int page);
+    int[] getPreferedPageNumbers();
+
+    void setOverruledPageNumbers(int[] pageNumbers);
+
+    TeletextCell[][] provideContent(int page);
+
+    void setCurrentPage(int pageNumber);
 
     void register(IPluginManager manager);
 
