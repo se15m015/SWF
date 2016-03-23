@@ -6,6 +6,6 @@ package teletext.interfaces;
 public interface IRenderManager {
 
     void registerRenderer(IRenderer renderer);
+    void unregisterRenderer(IRenderer renderer);
 
-    void updateAllRenderer(IPlugin plugin);
 }
