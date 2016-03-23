@@ -3,13 +3,13 @@ package teletext.interfaces;
 /**
  * Created by richie on 10/03/16.
  */
-public interface IPlugin extends IObserver{
+public interface IPlugin{
 
     String[][] provideContent(int page);
 
-    void register(IObserver observer);
+    void register(IPluginManager manager);
 
-    void unregister(IObserver observer);
+    void unregister(IPluginManager manager);
 
     void notifyAllObserver();
 
